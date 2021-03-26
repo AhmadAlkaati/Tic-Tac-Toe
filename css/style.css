@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #233a3a;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main header {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+main header h1 {
+  letter-spacing: 5px;
+}
+
+main .player-turn {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 5px;
+  margin-bottom: 1rem;
+}
+
+main .game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 180px);
+  grid-template-rows: repeat(3, 180px);
+}
+
+main .game-board .box {
+  background: white;
+  border: black 5px solid;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  font-weight: 600;
+  user-select: none;
+}
+
+main .game-board .box:hover {
+  background: rgba(255, 255, 255, 0.87);
+}
+
+main .result {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.622);
+  font-size: 20px;
+  position: absolute;
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  padding: 0 0.5rem;
+}
+
+main .result h1 {
+  letter-spacing: 4px;
+  margin-bottom: 1rem;
+}
+
+main .result button {
+  background: #f5eeee;
+  padding: 20px;
+  border: none;
+  font-size: 20px;
+  border-radius: 10px;
+  outline: none;
+}
+
+main .social {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .social a {
+  color: white;
+}
+
+main .social a i {
+  margin: 0 0.2rem;
+}
+/*# sourceMappingURL=style.css.map */

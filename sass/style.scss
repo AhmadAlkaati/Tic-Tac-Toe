@@ -1,0 +1,83 @@
+@import 'utilities';
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  header {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-bottom: 1rem;
+    h1 {
+      letter-spacing: 5px;
+    }
+  }
+  .player-turn {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin-bottom: 1rem;
+  }
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 180px);
+    grid-template-rows: repeat(3, 180px);
+
+    .box {
+      background: white;
+      border: black 5px solid;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 80px;
+      font-weight: 600;
+      user-select: none;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.87);
+      }
+    }
+  }
+
+  .result {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.622);
+    font-size: 20px;
+    position: absolute;
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    padding: 0 0.5rem;
+
+    h1 {
+      letter-spacing: 4px;
+      margin-bottom: 1rem;
+    }
+    button {
+      background: rgb(245, 238, 238);
+      padding: 20px;
+      border: none;
+      font-size: 20px;
+      border-radius: 10px;
+      outline: none;
+    }
+  }
+  .social {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      color: white;
+      i {
+        margin: 0 0.2rem;
+      }
+    }
+  }
+}

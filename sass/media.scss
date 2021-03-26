@@ -1,0 +1,31 @@
+@media (max-width: 600px) {
+  main {
+    .game-board {
+      grid-template-columns: repeat(3, 150px);
+      grid-template-rows: repeat(3, 150px);
+      .box:hover {
+        background: white;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    .game-board {
+      grid-template-columns: repeat(3, 120px);
+      grid-template-rows: repeat(3, 120px);
+    }
+    .result {
+      font-size: 14px;
+    }
+  }
+}
+@media (max-width: 400px) {
+  main {
+    .game-board {
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(3, 100px);
+    }
+  }
+}
